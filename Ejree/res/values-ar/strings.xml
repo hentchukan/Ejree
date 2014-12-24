@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">اجر</string>
+    <string name="action_settings">تعديلات</string>
+    <string name="date">التاريخ</string>
+    <string name="distance">المسافة</string>
+    <string name="speed">السرعة</string>
+    <string name="calories">الحريرات</string>
+    <string name="add">أضف</string>
+    <string name="clear">أمحُ الاستمارة</string>
+    <string name="menu_add_run">أضف تسجيلا جديدا</string>
+    <string name="menu_show_history">أرشيف الأنشطة</string>
+    <string name="menu_stats">الإحصائيات</string>
+    <string name="best_performance">الأداء الأفضل</string>
+    <string name="best_distances">المسافة الأفضل</string>
+    <string name="best_time">التوقيت الأفضل</string>
+    <string name="best_speed">السرعة الأفضل</string>
+    <string name="date_limiters_dialog">حدّد الفترة الزمنية</string>
+    <string name="OK">نعم</string>
+    <string name="Cancel">تراجع</string>
+    <string name="time">التوقيت</string>
+    <string name="action_import">أورد</string>
+    <string name="action_export">صدّر</string>
+    <string name="periode">الفترة الزمنية</string>
+    <string name="weekly">أسبوعيا</string>
+    <string name="monthly">شهريا</string>
+    <string name="yearly">سنويا</string>
+    <string name="default_date">01/01/2014</string>
+    <string name="menu_frequence">المواظبة</string>
+    <string name="search">ابحث</string>
+    <string name="runs">أشواط</string>
+    <string name="menu_best_performance">الإنجازات الأفضل</string>
+    <string name="table_date">التاريخ</string>
+    <string name="table_periode">الفترة</string>
+    <string name="table_distance">المسافة</string>
+    <string name="table_speed">السرعة</string>
+    <string name="table_time">التوقيت</string>
+    <string name="table_runs">التردّدات</string>
+    <string name="To">إلى</string>
+    <string name="From">من</string>
+    <string name="error_on_adding">حدث خطأ ما خلال تسجيل البيانات</string>
+    <string name="success_on_adding">تم تسجيل البيانات بنجاح</string>
+</resources>

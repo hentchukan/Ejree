@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginStart="15dp" >
+    
+	<TextView
+        android:id="@+id/frequency_item_periode"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:textColor="#000000" 
+        android:background="#d3d2d3"
+        android:textSize="12sp"/>
+	
+	<TextView
+	    android:id="@+id/frequency_item_runs"
+	    android:layout_width="40dp"
+	    android:layout_height="30dp"
+	    android:layout_margin="1dp"
+	    android:gravity="center"
+	   	android:textColor="#000000" 
+        android:background="#d3d2d3"
+	    android:textSize="13sp" />
+	
+	 <TextView
+	     android:id="@+id/frequency_item_distance"
+	     android:layout_width="60dp"
+	     android:layout_height="30dp"
+	     android:layout_margin="1dp"
+	     android:gravity="center"
+	     android:textColor="#000000" 
+        android:background="#d3d2d3"
+	     android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/frequency_item_time"
+        style="@drawable/run_item_style"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_margin="1dp"
+        android:gravity="center"
+       	android:textColor="#000000" 
+        android:background="#d3d2d3"
+        android:textSize="13sp" />
+    
+    <TextView
+        android:id="@+id/frequency_item_speed"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:textColor="#000000" 
+        android:background="#d3d2d3"
+        android:textSize="13sp" />
+
+</GridLayout>

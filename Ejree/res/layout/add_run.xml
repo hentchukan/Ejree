@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/background" >
+
+    <GridLayout
+        android:id="@+id/addRun_grid1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/all_margin"
+        android:columnCount="2" >
+
+        <TextView
+            android:id="@+id/addRun_dateLabel"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_column="0"
+            android:background="#B0B0B0"
+            android:gravity="center"
+            android:text="@string/date"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/addRun_date"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_column="1"
+            android:background="#B0B0B0"
+            android:gravity="center"
+            android:textSize="22sp" />
+    </GridLayout>
+
+    <EditText
+        android:id="@+id/addRun_distance"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/addRun_distanceLabel"
+        android:layout_alignBottom="@+id/addRun_distanceLabel"
+        android:layout_alignRight="@+id/addRun_grid1"
+        android:layout_alignEnd="@+id/addRun_grid1"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/addRun_distanceLabel"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/addRun_grid1"
+        android:layout_alignStart="@+id/addRun_grid1"
+        android:layout_below="@+id/addRun_grid1"
+        android:background="#838383"
+        android:gravity="center"
+        android:text="@string/distance"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/addRun_timeLabel"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/addRun_distanceLabel"
+        android:layout_alignStart="@+id/addRun_distanceLabel"
+        android:layout_below="@+id/addRun_distanceLabel"
+        android:layout_marginTop="30dp"
+        android:background="#838383"
+        android:gravity="center"
+        android:text="@string/time"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/addRun_time"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/addRun_timeLabel"
+        android:layout_alignBottom="@+id/addRun_timeLabel"
+        android:layout_alignLeft="@+id/addRun_distance"
+        android:layout_alignStart="@+id/addRun_distance"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:textSize="24sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/addRun_calorisLabel"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/addRun_timeLabel"
+        android:layout_alignStart="@+id/addRun_timeLabel"
+        android:layout_below="@+id/addRun_timeLabel"
+        android:layout_marginTop="30dp"
+        android:background="#838383"
+        android:gravity="center"
+        android:text="@string/calories"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/addRun_caloris"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/addRun_time"
+        android:layout_alignStart="@+id/addRun_time"
+        android:layout_alignTop="@+id/addRun_calorisLabel"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_alignRight="@+id/addRun_calorisLabel"
+        android:layout_alignEnd="@+id/addRun_calorisLabel"
+        android:layout_below="@+id/addRun_calorisLabel"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="27dp"
+        android:background="#A71926"
+        android:text="@string/add"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@+id/addButton"
+        android:layout_alignBottom="@+id/addButton"
+        android:layout_alignLeft="@+id/addRun_caloris"
+        android:layout_alignStart="@+id/addRun_caloris"
+        android:background="#A71926"
+        android:onClick="clear"
+        android:text="@string/clear"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

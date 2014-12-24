@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:layout_margin="1dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+		
+        <LinearLayout
+        	android:layout_width="207dp"
+     		android:layout_height="wrap_content"
+        	android:layout_gravity="center_horizontal">
+        
+        	<TextView
+            	android:id="@+id/label_from"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_gravity="bottom"
+            	android:layout_marginRight="30dp"
+            	android:text="@string/From" 
+            	android:textColor="#FFFFFF"
+            	android:textSize="22sp"/>
+        
+        	<ImageView
+            	android:id="@+id/show_frequency_search"
+            	android:layout_width="40dp"
+            	android:layout_height="40dp"
+            	android:layout_gravity="center"
+            	android:contentDescription="@string/search"
+            	android:scaleType="centerCrop"
+            	android:src="@drawable/search" />
+        
+         	<TextView
+             	android:id="@+id/label_to"
+             	android:layout_width="wrap_content"
+             	android:layout_height="wrap_content"
+             	android:layout_gravity="bottom"
+             	android:layout_marginLeft="50dp"
+             	android:text="@string/To" 
+            	android:textColor="#FFFFFF"
+            	android:textSize="22sp"/>
+    	</LinearLayout>
+        
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" 
+            android:paddingTop="10dp">
+			
+            <Button
+                android:id="@+id/show_frequence_bornInf"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="112dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left"
+                android:background="#b0b0b0"
+                android:text="@string/default_date" 
+                android:textSize="15sp"/>
+			
+            <Button
+                android:id="@+id/show_frequence_bornSup"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="112dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:background="#b0b0b0"
+                android:text="@string/default_date" 
+                android:textSize="15sp"/>
+        </GridLayout>
+        
+        <RadioGroup
+            android:id="@+id/rgFrequenceType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:paddingTop="10dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/show_frequence_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/weekly"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/show_frequence_month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/monthly"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/show_frequence_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/yearly"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="5dp" >
+
+        <TextView
+            android:id="@+id/show_frequency_periode"
+            android:layout_width="95dp"
+            android:layout_height="30dp"
+            android:layout_margin="1dp"
+            android:gravity="center"
+            android:text="@string/table_periode"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:background="#535353"/>
+        
+        <TextView
+            android:id="@+id/show_frequency_runs"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="1dp"
+            android:gravity="center"
+            android:text="@string/table_runs"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:background="#535353" />
+
+        <TextView
+            android:id="@+id/show_frequency_distance"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_margin="1dp"
+            android:gravity="center"
+            android:text="@string/table_distance"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:background="#535353"/>
+
+        <TextView
+            android:id="@+id/show_frequency_time"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_margin="1dp"
+            android:gravity="center"
+            android:text="@string/table_time"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:background="#535353" />
+
+        <TextView
+            android:id="@+id/show_frequency_speed"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_margin="1dp"
+            android:gravity="center"
+            android:text="@string/table_speed"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:background="#535353"  />
+    </GridLayout>
+
+    <ListView
+        android:id="@+id/show_frequency_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:headerDividersEnabled="true">
+    </ListView>
+
+</LinearLayout>
